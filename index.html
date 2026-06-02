@@ -1,76 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Cinema Mind</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinematic World</title>
 
-    header {
-      background: #b30000;
-      padding: 25px;
-      text-align: center;
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    nav {
-      background: #222;
-      padding: 12px;
-      text-align: center;
-    }
+body{
+    font-family:Arial,sans-serif;
+    background:#111;
+    color:white;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 15px;
-      font-weight: bold;
-    }
+header{
+    background:#8b0000;
+    padding:20px;
+    text-align:center;
+}
 
-    .hero {
-      padding: 70px 20px;
-      text-align: center;
-      background: linear-gradient(to right, #000, #3b0000);
-    }
+header h1{
+    font-size:42px;
+}
 
-    .hero h1 {
-      font-size: 45px;
-      color: #ffcc00;
-    }
+nav{
+    background:#1c1c1c;
+    padding:15px;
+    text-align:center;
+}
 
-    .section {
-      padding: 30px;
-      text-align: center;
-    }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
 
-    .movie-card {
-      background: #1c1c1c;
-      width: 250px;
-      margin: 15px;
-      padding: 15px;
-      display: inline-block;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #000;
-    }
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+    background-size:cover;
+    background-position:center;
+}
 
-    .movie-card img {
-      width: 100%;
-      border-radius: 8px;
-    }
+.hero h2{
+    font-size:50px;
+    color:#ffd700;
+}
 
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 15px;
-      color: #aaa;
-    }
-  </style>
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.section{
+    padding:50px 20px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#ffd700;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#1f1f1f;
+    width:280px;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.review{
+    background:#1f1f1f;
+    margin:15px auto;
+    max-width:800px;
+    padding:20px;
+    border-radius:10px;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#aaa;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>🎬 Cinema World</h1>
-    <p>Your
+<header>
+<h1>🎬 Cinematic Mind</h1>
+<p>Movies • Reviews • Rankings • Cinema</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Films</a>
+<a href="#">Reviews</a>
+<a href="#">Directors</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Welcome to Cinematic World</h2>
+<p>Discover classics, hidden gems and modern masterpieces.</p>
+</section>
+
+<section class="section">
+<h2>Featured Films</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Vertigo (1958)</h3>
+<p>Alfred Hitchcock's psychological masterpiece.</p>
+</div>
+
+<div class="card">
+<h3>Seven Samurai (1954)</h3>
+<p>Akira Kurosawa's epic adventure classic.</p>
+</div>
+
+<div class="card">
+<h3>Goodfellas (1990)</h3>
+<p>Martin Scorsese's legendary crime film.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Legendary Directors</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Alfred Hitchcock</h3>
+<p>Master of suspense.</p>
+</div>
+
+<div class="card">
+<h3>Martin Scorsese</h3>
+<p>Crime and character-driven cinema.</p>
+</div>
+
+<div class="card">
+<h3>Akira Kurosawa</h3>
+<p>One of the greatest filmmakers ever.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Latest Reviews</h2>
+
+<div class="review">
+<h3>Shadow of a Doubt ★★★★½</h3>
+<p>One of Hitchcock's most elegant thrillers with a chilling atmosphere.</p>
+</div>
+
+<div class="review">
+<h3>Amélie ★★★★½</h3>
+<p>A charming and visually delightful celebration of life.</p>
+</div>
+
+<div class="review">
+<h3>Prisoners ★★★★★</h3>
+<p>Tense, dark and emotionally devastating from start to finish.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Cinematic Mind | Made by a Siddharth Besra</p>
+</footer>
+
+</body>
+</html>
